@@ -15,7 +15,7 @@ buildPythonPackage rec {
 
   src = fetchPypi {
     inherit pname version;
-    hash = "sha256-57f2e13b059b38fde89580beca916ac6ca7456b2d706c3ddea9dd4890e5f5bd3";
+    hash = "sha256-V/LhOwWbOP3olYC+ypFqxsp0VrLXBsPd6p3UiQ5fW9M=";
   };
 
   dependencies = [ sphinx ditaa ];
