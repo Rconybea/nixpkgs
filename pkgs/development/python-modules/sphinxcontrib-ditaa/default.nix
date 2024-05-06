@@ -22,7 +22,7 @@ buildPythonPackage rec {
   # no tests provided
   doCheck = false;
 
-  pythonImportsCheck = [ "sphinxcontrib-ditaa" ];
+  pythonImportsCheck = [ "sphinxcontrib.ditaa" ];
 
   pythonNamespaces = [ "sphinxcontrib" ];
 
