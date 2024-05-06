@@ -1,8 +1,7 @@
 { lib
 , buildPythonPackage
 , fetchPypi
-, unittestCheckHook
-, mock
+, setuptools
 , sphinx-testing
 , sphinx
 , ditaa
@@ -18,7 +17,7 @@ buildPythonPackage rec {
     hash = "sha256-V/LhOwWbOP3olYC+ypFqxsp0VrLXBsPd6p3UiQ5fW9M=";
   };
 
-  dependencies = [ sphinx ditaa ];
+  dependencies = [ setuptools sphinx ditaa ];
 
   # no tests provided
   doCheck = false;
