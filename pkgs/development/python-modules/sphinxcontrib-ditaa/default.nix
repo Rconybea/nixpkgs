@@ -32,7 +32,7 @@ buildPythonPackage rec {
     description = "Sphinx ditaa extension";
     homepage = "https://pypi.org/project/sphinxcontrib-ditaa";
     maintainers = with lib.maintainers; [ rconybea ];
-    license = lib.licenses.bsd0;
+    license = lib.licenses.bsd2;
   };
 
 }
