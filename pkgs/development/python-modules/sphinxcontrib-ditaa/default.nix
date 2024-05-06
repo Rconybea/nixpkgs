@@ -23,10 +23,8 @@ buildPythonPackage rec {
 
   # no tests provided
   doCheck = false;
-
-  nativeCheckInputs = [ unittestCheckHook ];
-
-  unittestFlagsArray = [ "-s" "tests" ];
+  
+  pythonImportsCheck = [ "sphinxcontrib-ditaa" ];
 
   pythonNamespaces = [ "sphinxcontrib" ];
 
