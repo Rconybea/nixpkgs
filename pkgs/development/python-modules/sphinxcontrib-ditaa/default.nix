@@ -19,7 +19,7 @@ buildPythonPackage rec {
   };
 
   buildInputs = [ mock sphinx-testing ];
-  propagatedBuildInputs = [ sphinx ditaa ];
+  dependencies = [ sphinx ditaa ];
 
   # no tests provided
   doCheck = false;
