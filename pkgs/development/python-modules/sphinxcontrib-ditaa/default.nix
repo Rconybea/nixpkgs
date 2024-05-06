@@ -4,6 +4,7 @@
 , setuptools
 , sphinx-testing
 , sphinx
+, docutils
 , ditaa
 }:
 
@@ -17,7 +18,10 @@ buildPythonPackage rec {
     hash = "sha256-V/LhOwWbOP3olYC+ypFqxsp0VrLXBsPd6p3UiQ5fW9M=";
   };
 
-  dependencies = [ setuptools sphinx ditaa ];
+  # setuptools: need to fetch this dep on behalf of build
+  #             triggered by pyproject=true
+  # docutils:   pythonImportsCheck requires this.
+  dependencies = [ setuptools sphinx docutils ditaa ];
 
   # no tests provided
   doCheck = false;
